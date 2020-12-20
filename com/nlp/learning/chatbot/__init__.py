@@ -9,5 +9,6 @@
 # 中文
 # pip install jieba
 
+if __name__ == "__main__":
 
-
+    print("a")
