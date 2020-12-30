@@ -40,7 +40,6 @@ def linear():
 if __name__ == "__main__":
     data = list(get_data(10, 10)) + list(get_data(6, 2))
     print(list(data))
-
     w1 = w2 = 7
 
     for i in range(0, 5000):
