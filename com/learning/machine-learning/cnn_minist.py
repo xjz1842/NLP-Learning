@@ -87,7 +87,7 @@ print("test accuracy:", score[1])
 
 model.save("./mnist.h5")
 
-model_mnist = keras.models.load_model("./mnist.h5")
+model_mnist = keras.models.load_model("mnist.h5")
 
 result = model_mnist.predict_classes(x_test[:1], batch_size=1, verbose=0)
 print("predict is: ", result)
