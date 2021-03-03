@@ -1,6 +1,3 @@
-import os
-import time
-import itertools
 import sys
 import tensorflow as tf
 import udc_model

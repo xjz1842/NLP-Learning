@@ -1,15 +1,9 @@
-import os
-import time
-import itertools
 import sys
 import numpy as np
 import tensorflow as tf
 import udc_model
 import udc_hparams
-import udc_metrics
-import udc_inputs
 from models.dual_encoder import dual_encoder_model
-from models.helpers import load_vocab
 
 tf.flags.DEFINE_string("model_dir", None, "Directory to load model checkpoints from")
 tf.flags.DEFINE_string("vocab_processor_file", "./data/vocab_processor.bin", "Saved vocabulary processor file")

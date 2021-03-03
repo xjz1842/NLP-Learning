@@ -48,7 +48,7 @@ def train_model():
                     batch_size=128,
                     shuffle=True,
                     validation_data=(x_test_noisy, x_test),
-                    callbacks=[TensorBoard(log_dir='./log', histogram_freq=0, write_graph=False)])
+                    callbacks=[TensorBoard(log_dir='log', histogram_freq=0, write_graph=False)])
 
     autoencoder.save('autoencoder.h5')
 

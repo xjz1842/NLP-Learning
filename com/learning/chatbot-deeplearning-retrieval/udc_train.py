@@ -1,6 +1,5 @@
 import os
 import time
-import itertools
 import tensorflow as tf
 import udc_model
 import udc_hparams
