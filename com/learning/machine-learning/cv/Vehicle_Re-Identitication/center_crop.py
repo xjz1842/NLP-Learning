@@ -1,9 +1,8 @@
-
 def center_crop(x, center_crop_size):
     centerw, centerh = x.shape[0] // 2, x.shape[1] // 2
     halfw, halfh = center_crop_size[0] // 2, center_crop_size[1] // 2
-    cropped = x[centerw - halfw : centerw + halfw,
-              centerh - halfh : centerh + halfh, :]
+    cropped = x[centerw - halfw: centerw + halfw,
+              centerh - halfh: centerh + halfh, :]
     return cropped
 
 def scale_byRatio(img_path, ratio=1.0, return_width=299, crop_method=center_crop):
@@ -22,7 +21,7 @@ def scale_byRatio(img_path, ratio=1.0, return_width=299, crop_method=center_crop
 
 import cv2
 from PIL import Image
-import  matplotlib.pyplot  as plt
+import matplotlib.pyplot  as plt
 
 if __name__ == "__main__":
     img = scale_byRatio('./cat.jpg', return_width=224)

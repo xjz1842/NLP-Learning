@@ -109,7 +109,7 @@ class EmailToWordFeatures:
                 return True
         return False
 
-stop_word_file = '/trec06c/chinese_stop_words.txt'
+stop_word_file = '../trec06c/chinese_stop_words.txt'
 ham_file = './trec06c/ham_data'
 spam_file = './trec06c/spam_data'
 file = './trec06c/data'
