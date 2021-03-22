@@ -26,7 +26,6 @@ if __name__ == "__main__":
     wordcloud = wordcloud.fit_words(word_freq)
     plt.imshow(wordcloud)
 
-
     image = cv2.imread('./data/python.jpg')
     wordcloud = WordCloud(font_path = './data/simhei.ttf',background_color='white',max_words = 50,mask = image)
     wordcloud.fit_words(word_freq)
